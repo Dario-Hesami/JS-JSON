@@ -57,6 +57,10 @@
             const headerH1 = document.createElement('h1');
             headerH1.textContent = jsonObj['companyName'];
             header.appendChild(headerH1);
+            // Grab the company location and estabilished date
+            const headerPara = document.createElement('p');
+            headerPara.textContent = 'Head Office ' + jsonObj['headOffice'] + ', Estabilished: ' + jsonObj['established'];
+            header.appendChild(headerPara);
 
         }
 
